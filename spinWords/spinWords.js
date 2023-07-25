@@ -1,3 +1,5 @@
+"use strict"
+
 /**
  * Goal: reverse words that have length greater than 5 
  * 
