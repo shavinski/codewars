@@ -21,12 +21,12 @@
  * return result array and join and turn into a string 
  */
 
-function disemvowel(string) {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    const stringToArr = string.split('');    
-    const resultArr = [];                   // ['N','c',' ','n',' ','w','s','m']
+function disemvowel(sentence:string) {
+    const vowels:Array<string> = ['a', 'e', 'i', 'o', 'u'];
+    const sentenceToArr:Array<string> = sentence.split('');    
+    const resultArr:Array<string> = [];                   // ['N','c',' ','n',' ','w','s','m']
 
-    for (let char of stringToArr) {           
+    for (let char of sentenceToArr) {           
         let charLower = char.toLowerCase();   // m
 
         if (!vowels.includes(charLower)) {  
@@ -36,3 +36,5 @@ function disemvowel(string) {
 
     return resultArr.join('').toString();
 }
+
+export default disemvowel;
