@@ -32,12 +32,12 @@
  *     
  */
 
-function spinWords(string) { // "Welcome"
-    const result = [];                   // ["emocleW"]
-    const words =string.split(' ');      // ['Welcome']
+function spinWords(string:string) { // "Welcome"
+    const result:Array<string> = [];                   // ["emocleW"]
+    const words:Array<string> = string.split(' ');      // ['Welcome']
 
     for (let word of words) {           // ["Welcome"]
-        let reversedWord = [];          // ["e", "m", "o", "c", "l", "e", "W"]
+        let reversedWord:Array<string> = [];          // ["e", "m", "o", "c", "l", "e", "W"]
  
         if (word.length >= 5) {
             for (let i = word.length - 1; i >= 0; i--) {
@@ -55,3 +55,5 @@ function spinWords(string) { // "Welcome"
 
     return result.join(' ');
 }
+
+export default spinWords;
