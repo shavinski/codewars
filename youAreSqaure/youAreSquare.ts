@@ -7,7 +7,7 @@
  * Test Cases: 
  * -1 => false
  *  0  =>  true
- *  3  =>  false
+ *  3  =>  false 
  *  4  =>  true
  *  25  =>  true
  *  26  =>  false
@@ -33,10 +33,10 @@ export function isSquare(n: number): boolean {
     return Number.isInteger(root);
 };
 
-export function isSquare2(n: number): boolean {
-    for (let i = 0; i <= n; i++) {
-        let squaredNum: number = i * i;
-        if (squaredNum === n) return true;
+export function isSquare2(n: number): boolean {  // 4
+    for (let i = 0; i <= n; i++) {               // i=2, i <= 4
+        let squaredNum: number = i * i;          // squaredNum = 4
+        if (squaredNum === n) return true;       // 4 === 4 
         if (squaredNum > n) return false;
     }
 
