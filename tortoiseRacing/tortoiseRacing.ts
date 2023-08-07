@@ -48,6 +48,7 @@ export const race = (v1: number, v2: number, g: number) => {
         if (time[2] === 60) {
             time[2] = 0;
             time[1] += 1;
+            time[1] += 1;
         }
         
         if (time[1] === 60) {
