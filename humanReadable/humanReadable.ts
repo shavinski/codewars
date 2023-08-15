@@ -73,7 +73,7 @@ export function humanReadable(seconds: number): string {
 
 
 /**
- * Better solution on codewars
+ * Better solution on codewars solution page
  * 
  * export function humanReadable(seconds:number):string {
   const minutes = Math.floor(seconds / 60)
