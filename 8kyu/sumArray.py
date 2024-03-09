@@ -5,3 +5,9 @@ def sum_array(a):
         sum += num
     
     return sum
+
+"""
+or 
+
+return sum(a)
+"""
